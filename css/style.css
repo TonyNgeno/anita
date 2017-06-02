@@ -1,3 +1,6 @@
+*{
+  max-width: 100%;
+}
 html,body{
   height:100%;
   width:100%;
@@ -52,13 +55,37 @@ html,body{
 #food-description{
   padding: 0;
   margin: 0;
+  width: 100%;
 }
 .fastfood{
   padding:0;
+  width: 100%
 }
 .drinks{
   padding:0;
+  width: 100%;
 }
 .drinks img{
   width:100%;
+}
+#food-pills{
+  background-image: url("../img/backgrounds/foodsBg.jpg");
+  height:599px;
+  background-size: cover;
+}
+#customers{
+  height:400px;
+}
+#subscribe{
+  height:301px;
+  background-image: url("../img/backgrounds/subscribe.jpg");
+  background-size: cover;
+}
+footer{
+  height:500px;
+  background-color: rgb(241,91,41);
+}
+footer.footer-menu{
+  display: inline;
+  text-align: center;
 }
