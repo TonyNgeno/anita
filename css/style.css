@@ -1,0 +1,64 @@
+html,body{
+  height:100%;
+  width:100%;
+  margin:0;
+  padding:0;
+}
+.landing{
+  height:100%;
+}
+#navbar{
+  height:75%;
+  width:100%;
+  background-image: url("../img/backgrounds/landing.jpg");
+  background-size: cover;
+}
+#courses{
+  height:25%;
+  width:100%;
+  padding: 0;
+  margin: 0;
+  display: table;
+}
+#bar{
+  height:100%;
+  text-align: center;
+  padding: 0;
+}
+#breakfast{
+  height:100%;
+  background-image: url("../img/foodtop/breakfast.jpg");
+  background-size: cover;
+  text-align: center;
+}
+#lunch{
+  height:100%;
+  background-image: url("../img/foodtop/lunch.jpg");
+  background-size: cover;
+  text-align: center;
+}
+#dinner{
+  height:100%;
+  background-image: url("../img/foodtop/dinner.jpg");
+  background-size: cover;
+  text-align: center;
+}
+.bar-text{
+  height:50%;
+}
+#party-time{
+  background-color: rgb(241,91,41);
+}
+#food-description{
+  padding: 0;
+  margin: 0;
+}
+.fastfood{
+  padding:0;
+}
+.drinks{
+  padding:0;
+}
+.drinks img{
+  width:100%;
+}
