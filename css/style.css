@@ -64,19 +64,32 @@ section#courses.row.container{
   background-color: rgb(241,91,41);
 }
 #food-description{
+  margin:0;
+  padding: 0;
+  width: 100%;
+}
+.food-description-section, .drinks-description-section{
+  margin:0;
+  padding: 0;
+  width:100%;
+  overflow: auto;
+}
+.fastfood-image-section{
+  margin: 0;
+  padding: 0;
+}
+.fastfood-image-section img{
+  width:100%;
+}
+.drinks-image-section, .drinks-text-section{
   padding: 0;
   margin: 0;
-  width: 100%;
 }
-.fastfood{
-  padding:0;
-  width: 100%
+.drinks-image-section .col-xs-6{
+  padding: 0;
+  margin: 0;
 }
-.drinks{
-  padding:0;
-  width: 100%;
-}
-.drinks img{
+.drinks-image-section img{
   width:100%;
 }
 #food-pills{
@@ -93,10 +106,7 @@ section#courses.row.container{
   background-size: cover;
 }
 footer{
-  height:500px;
+  height:400px;
   background-color: rgb(241,91,41);
-}
-footer.footer-menu{
-  display: inline;
   text-align: center;
 }
