@@ -7,21 +7,35 @@ html,body{
   margin:0;
   padding:0;
 }
-.landing{
-  height:100%;
-}
+/* The landing page*/
 #navbar{
-  height:75%;
+  height:100%;
   width:100%;
   background-image: url("../img/backgrounds/landing.jpg");
+  background-origin:100px 200px
+  background-repeat: no-repeat;
   background-size: cover;
+  text-align: center;
+  color:white;
 }
-section#courses.row.container{
-  height:25%;
+#navbar nav{
+  text-align: left;
+  /*padding:20px;*/
+  height:50px;
+}
+#navbar .jumbotron{
+  background-color: rgba(0,0,0,0);
+}
+/*The courses section with menu icons*/
+#courses{
   width:100%;
   padding: 0;
   margin: 0;
   display: table;
+}
+#courses div.col-md-6{
+  padding: 0;
+  height:200px;
 }
 #bar{
   height:100%;
@@ -35,7 +49,9 @@ section#courses.row.container{
   align-items: center;
   justify-content: center;
   font-style: italic;
+  color:white;
 }
+
 #lunch{
   height:100%;
   background-image: url("../img/foodtop/lunch.jpg");
@@ -44,6 +60,7 @@ section#courses.row.container{
   align-items: center;
   justify-content: center;
   font-style: italic;
+  color:white;
 }
 #dinner{
   height:100%;
@@ -53,6 +70,7 @@ section#courses.row.container{
   align-items: center;
   justify-content: center;
   font-style: italic;
+  color:white;
 }
 .bar-text{
   height:50%;
@@ -62,29 +80,53 @@ section#courses.row.container{
 }
 #party-time{
   background-color: rgb(241,91,41);
+  color:white;
 }
 #food-description{
   margin:0;
-  padding: 0;
+  padding:10px 0px 10px 0px;
   width: 100%;
+  height:auto;
 }
-.food-description-section, .drinks-description-section{
+.food-description-section{
   margin:0;
-  padding: 0;
+  padding: 80px 80px 40px 80px;
   width:100%;
+  height:50%;
   overflow: auto;
 }
+
+.drinks-description-section{
+  margin:0;
+  padding: 40px 80px 80px 80px;
+  width:100%;
+  height:50%;
+  overflow: auto;
+}
+
 .fastfood-image-section{
+  /*padding:top right bottom left*/
+  border: 20px solid green;
+  box-shadow: 20;
   margin: 0;
   padding: 0;
 }
 .fastfood-image-section img{
   width:100%;
 }
+.fastfood-text-section{
+  padding: 0px 80px 0px 40px;
+}
 .drinks-image-section, .drinks-text-section{
   padding: 0;
   margin: 0;
 }
+.drinks-image-section{
+  border: 20px solid green;
+  height:auto;
+  /*padding: 0px 40px 0px 80px; */
+}
+
 .drinks-image-section .col-xs-6{
   padding: 0;
   margin: 0;
@@ -106,7 +148,42 @@ section#courses.row.container{
   background-size: cover;
 }
 footer{
-  height:400px;
+  padding-top: 50px;
+  padding-bottom: 25px;
   background-color: rgb(241,91,41);
   text-align: center;
 }
+footer .social-buttons{
+  background-color: green;
+  color: green;
+}
+@media only screen and (max-width: 768px) {
+  /*media queries*/
+  #navbar{
+    height:100%;
+  }
+  #navbar img{
+    max-width:200px;
+  }
+  #courses{
+    height:20%;
+  }
+  #courses div.col-md-6{
+    padding: 0;
+    height:80px;
+  }
+
+  .drinks-description-section{
+      padding:0;
+  }
+  .fastfood-text-section{
+      padding:10px 10px 10px 10px;
+  }
+  .drinks-text-section{
+      padding:10px 10px 10px 10px;
+  }
+  .food-description-section{
+      padding:0;
+  }
+}
+/*padding:top right bottom left*/
