@@ -18,10 +18,31 @@ html,body{
   text-align: center;
   color:white;
 }
-#navbar nav{
-  text-align: left;
-  /*padding:20px;*/
-  height:50px;
+
+#navbar nav #sidebar{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.nav-menu{
+  position: relative;
+  list-style: none;
+  top: 25%;
+  width: 100%;
+  margin-top: 30px;
+}
+.sidebar .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
 }
 #navbar .jumbotron{
   background-color: rgba(0,0,0,0);
@@ -36,6 +57,7 @@ html,body{
 #courses div.col-md-6{
   padding: 0;
   height:200px;
+  font-size: 120%;
 }
 #bar{
   height:100%;
@@ -88,7 +110,7 @@ html,body{
   width: 100%;
   height:auto;
 }
-.food-description-section{
+.fastfood-description-section{
   margin:0;
   padding: 80px 80px 40px 80px;
   width:100%;
@@ -106,8 +128,8 @@ html,body{
 
 .fastfood-image-section{
   /*padding:top right bottom left*/
-  border: 20px solid green;
-  box-shadow: 20;
+  border: 20px solid rgba(110,110,110,0.1);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   margin: 0;
   padding: 0;
 }
@@ -122,7 +144,8 @@ html,body{
   margin: 0;
 }
 .drinks-image-section{
-  border: 20px solid green;
+  border: 20px solid rgba(110,110,110,0.1);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   height:auto;
   /*padding: 0px 40px 0px 80px; */
 }
@@ -133,6 +156,13 @@ html,body{
 }
 .drinks-image-section img{
   width:100%;
+}
+.view-gallery-text{
+  padding-top:5px;
+  padding-bottom: 0;
+  /*padding: 5px;*/
+  border:1px solid rgb(241,91,41);
+  border-radius: 2px;
 }
 #food-pills{
   background-image: url("../img/backgrounds/foodsBg.jpg");
@@ -172,7 +202,13 @@ footer .social-buttons{
     padding: 0;
     height:80px;
   }
-
+  .fastfood-image-section{
+    /*padding:top right bottom left*/
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+  }
   .drinks-description-section{
       padding:0;
   }
