@@ -18,7 +18,9 @@ html,body{
   text-align: center;
   color:white;
 }
-
+#navbar nav{
+  text-align: left;
+}
 #navbar nav #sidebar{
   height: 100%;
   width: 0;
@@ -26,26 +28,41 @@ html,body{
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9);
-  overflow-x: hidden;
+  background-color: rgba(0,0,0, 0.5);
+  overflow: hidden;
   transition: 0.5s;
+}
+#navbar nav .hamburger{
+  position: absolute;
 }
 .nav-menu{
   position: relative;
   list-style: none;
-  top: 25%;
-  width: 100%;
-  margin-top: 30px;
 }
-.sidebar .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
+#sidebar ul li{
+  padding:20px;
+}
+#sidebar ul li:hover{
+  padding:25px;
+  background-color: red;
+}
+#sidebar #closebtn {
+  padding:20px;
+  background-color: yellow;
+  position: absolute;
+  /*font-size: 60px;*/
 }
 #navbar .jumbotron{
   background-color: rgba(0,0,0,0);
+  height:100%;
+  width: 100%;
+  display: table;
+}
+#navbar .jumbotron .container{
+  display: table-cell;
+  vertical-align: middle;
+  justify-content: center;
+  width:100%;
 }
 /*The courses section with menu icons*/
 #courses{
@@ -149,6 +166,10 @@ html,body{
   height:auto;
   /*padding: 0px 40px 0px 80px; */
 }
+.drinks-text-section{
+  direction: rtl;
+  padding-right: 40px;
+}
 
 .drinks-image-section .col-xs-6{
   padding: 0;
@@ -165,9 +186,61 @@ html,body{
   border-radius: 2px;
 }
 #food-pills{
+  width: 100%;
+  height:auto;
   background-image: url("../img/backgrounds/foodsBg.jpg");
-  height:599px;
   background-size: cover;
+}
+.food-pills-wrapper{
+  margin:0;
+  padding:0;
+  height:100%;
+  width:100%;
+}
+.food-pills-content{
+  /*padding:top right bottom left*/
+  margin: 60px 60px 60px 60px;
+  /*height: 100%;
+  width: 100%;*/
+}
+.image-play-wrapper{
+  width:100%;
+}
+.food-pills-content .fast-food-items{
+  width:inherit;
+  background-color: white;
+  display: inline-flex;
+  /*position: absolute;*/
+}
+.food-pills-content .fast-food-items .arrow{
+  margin:10px;
+  width:10%;
+  color:orange;
+  font-weight: bold;
+  font-size: 150%;
+  display: flex;
+  align-items: center;
+
+}
+.food-pills-content .fast-food-items .arrow.left{
+  text-align: right;
+}
+.food-pills-content .fast-food-items .content{
+  width:80%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.food-pills-content .drinks-food-items{
+  position: absolute;
+  display: none;
+}
+.food-pills-content .chicken-food-items{
+  position: absolute;
+  display: none;
+}
+.food-pills-content .rice-food-items{
+  position: absolute;
+  display:none;
 }
 #customers{
   height:400px;
@@ -220,6 +293,9 @@ footer .social-buttons{
   }
   .food-description-section{
       padding:0;
+  }
+  .fastfood-description-section{
+    padding:10px 10px 10px 10px;
   }
 }
 /*padding:top right bottom left*/
