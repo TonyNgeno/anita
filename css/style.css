@@ -125,7 +125,7 @@ html,body{
   margin:0;
   padding:10px 0px 10px 0px;
   width: 100%;
-  height:auto;
+  /*height:auto;*/
 }
 .fastfood-description-section{
   margin:0;
@@ -202,6 +202,11 @@ html,body{
   margin: 60px 60px 60px 60px;
   /*height: 100%;
   width: 100%;*/
+  background-color: rgb(200,200,200);
+  text-align: center;
+}
+.food-pills-content ul li{
+  border-right: 1px solid rgb(150,150,150);
 }
 .image-play-wrapper{
   width:100%;
@@ -243,7 +248,20 @@ html,body{
   display:none;
 }
 #customers{
-  height:400px;
+
+}
+#customers .customers-wrapper{
+  /*padding:top right bottom left*/
+  margin: 60px 10px 60px 100px;
+}
+#customers .customers-wrapper .customer-boundary{
+  width: 100%;
+  margin: 10px 20px 10px 20px;
+}
+#customers .customers-wrapper .customer-boundary .content.one{
+  padding:60px 10px 60px 100px;
+  border-right: 2px solid rgb(150,150,150);
+  text-align: center;
 }
 #subscribe{
   height:301px;
@@ -291,11 +309,24 @@ footer .social-buttons{
   .drinks-text-section{
       padding:10px 10px 10px 10px;
   }
+  .drinks-image-section{
+    height:auto;
+  }
   .food-description-section{
       padding:0;
   }
   .fastfood-description-section{
     padding:10px 10px 10px 10px;
+  }
+  #customers .customers-wrapper{
+    margin:0;
+  }
+  #customers .customers-wrapper .customer-boundary{
+    margin:0;
+  }
+  #customers .customers-wrapper .customer-boundary .content.one{
+    padding: 0;
+    border: 0px;
   }
 }
 /*padding:top right bottom left*/
