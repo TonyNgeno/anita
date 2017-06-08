@@ -272,9 +272,37 @@ html,body{
   text-align: center;
 }
 #subscribe{
-  height:301px;
   background-image: url("../img/backgrounds/subscribe.jpg");
   background-size: cover;
+  color: white;
+}
+#subscribe .subscribe-wrapper{
+  text-align: center;
+  margin:0 200px 0 200px;
+  padding: 120px 0 120px 0;
+}
+.subscribe-wrapper .row{
+  padding: 0;
+  margin: 0;
+  height:50px;
+}
+.subscribe-wrapper .row #email{
+  background-color: rgba(100,100,100,0.4);
+  border-radius: 0;
+  border:none;
+  color: white;
+  height: 100%;
+}
+.subscribe-wrapper .row .col-md-8, .subscribe-wrapper .row .col-md-4{
+  height:100%;
+}
+.subscribe-wrapper .btn{
+  width: 100%;
+  height:100%;
+  border-radius: 0;
+  border: none;
+  color: inherit;
+  background-color: rgb(241,91,41);
 }
 footer{
   padding-top: 50px;
@@ -335,6 +363,14 @@ footer .social-buttons{
   #customers .customers-wrapper .customer-boundary .content.one{
     padding: 0;
     border: 0px;
+  }
+  #subscribe .subscribe-wrapper{
+    text-align: center;
+    margin:0 5px 0 5px;
+    padding: 20px 0 20px 0;
+  }
+  .subscribe-wrapper .btn{
+    width: auto;
   }
 }
 /*padding:top right bottom left*/
