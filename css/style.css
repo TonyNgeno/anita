@@ -275,6 +275,7 @@ html,body{
   background-image: url("../img/backgrounds/subscribe.jpg");
   background-size: cover;
   color: white;
+  height:auto;
 }
 #subscribe .subscribe-wrapper{
   text-align: center;
@@ -311,9 +312,24 @@ footer{
   text-align: center;
 }
 footer .social-buttons{
-  background-color: green;
-  color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+footer .social-buttons img{
+  padding-right: 30px;
+}
+footer .footer-menu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-menu img, .footer-menu h3{
+  padding-left: 30px;
+}
+
+
+/*media queries for smaller browsers*/
 @media only screen and (max-width: 768px) {
   /*media queries*/
   #navbar{
@@ -367,10 +383,10 @@ footer .social-buttons{
   #subscribe .subscribe-wrapper{
     text-align: center;
     margin:0 5px 0 5px;
-    padding: 20px 0 20px 0;
+    padding: 20px 0 70px 0;
   }
   .subscribe-wrapper .btn{
-    width: auto;
+    width: 200px;
   }
 }
 /*padding:top right bottom left*/
