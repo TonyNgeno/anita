@@ -28,9 +28,10 @@ html,body{
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgba(0,0,0, 0.5);
+  background-color: #F15A29;
   overflow: hidden;
   transition: 0.5s;
+  color:green;
 }
 #navbar nav .hamburger{
   position: absolute;
@@ -41,6 +42,9 @@ html,body{
 }
 #sidebar ul li{
   padding:20px;
+}
+#sidebar ul li a{
+  color:black;
 }
 #sidebar ul li:hover{
   padding:25px;
@@ -110,6 +114,10 @@ html,body{
   justify-content: center;
   font-style: italic;
   color:white;
+}
+#breakfast:hover, #lunch:hover, #dinner:hover{
+  opacity: 0.4;
+  color:black;
 }
 .bar-text{
   height:50%;
