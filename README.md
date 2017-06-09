@@ -14,3 +14,7 @@ The project itself utilises the following technologies:
 
 It is based on the following design
 ![design image](img/core.jpg)
+
+## Licence and copyright
+  Ngeno Victor, Moringa School
+  Licensed under [MIT Licence](licence) 
