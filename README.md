@@ -12,8 +12,8 @@ The project itself utilises the following technologies:
 * JQuery
 * JavaScript
 
-It is based on the following design
-![design image](img/core.jpg)
+It is based on the following design image.
+[design image](img/core.jpg)
 
 ## Licence and copyright
   Ngeno Victor, Moringa School
